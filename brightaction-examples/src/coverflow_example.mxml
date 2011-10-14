@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ *
+ * GNU General Public License v3
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+-->
+<!--
+    Example application of loading Brightcove videos into a CoverFlow component using the
+    Brightaction BC Media API wrapper and Ely Greenfield's DisplayShelf component.
+
+    @author amanning
+-->
+<Application xmlns="http://www.adobe.com/2006/mxml"
+        xmlns:local="*"
+        height="100%"
+        width="100%"
+        backgroundColor="0x000000"
+        verticalGap="20"
+        creationComplete="onCreationComplete()">
+
+    <!--
+        ********************************************************************************************
+        SCRIPT
+        ********************************************************************************************
+    -->
+    <Script>
+        <![CDATA[
+            import com.brightcove.brightaction.api.MediaRequest;
+            import com.brightcove.brightaction.api.MediaRequestErrorType;
+            import com.brightcove.brightaction.api.MediaRequestType;
+            import com.brightcove.brightaction.api.SortByTypeEnum;
+            import com.brightcove.brightaction.api.SortOrderTypeEnum;
+            import com.brightcove.brightaction.model.BCVideo;
+            import com.brightcove.brightaction.model.ItemCollection;
+            import com.brightcove.brightaction.model.MediaResponse;
+            import com.brightcove.brightaction.model.SearchField;
+            import com.brightcove.brightaction.model.SearchFieldsEnum;
+            
+            import mx.collections.ArrayCollection;
+            import mx.collections.Sort;
+            import mx.controls.Alert;
+        
+        /** The image dataprovider */
+        [Bindable]
+        private var _imageSourceDataProvider:ArrayCollection = new ArrayCollection();
+        
+        /** The list of all videos */
+        [Bindable]
+        private var _resultVideos:ArrayCollection = new ArrayCollection();
+
+        /** The publisher token to be used to make the requests */
+        private var _token:String = "Q1kGwkwut5YvD4cGLykpwxNQREpbBRYHCEZu2LF8z6U."
+            
+        /** Load the children into the ViewStack */
+        private function onCreationComplete():void {
+
+            var mediaRequest:MediaRequest = new MediaRequest(_token);
+
+            mediaRequest.addEventListener(
+                MediaRequest.RESULT_NAME, 
+                populateDataProvider);
+
+            mediaRequest.findAllVideos(10);
+
+        }
+        
+        /** 
+         * Given a List of videos, populate the dataprovider of thumbnail paths.
+         * 
+         * @param resultEvent   the Media Request result Event
+         * 
+         */
+        private function populateDataProvider(event:Event):void {
+
+            _resultVideos = new ArrayCollection(
+                (((event.currentTarget as MediaRequest).resultData) as ItemCollection).items);
+
+            for each(var video:BCVideo in _resultVideos) {
+                _imageSourceDataProvider.addItem(video.videoStillURL);
+            }
+        
+        }
+        
+        /** 
+         * Given an index in the shelf, return the associated video
+         * 
+         * @param index     the index of the item selected in the shelf
+         * @return          the associated video
+         */
+        private function getVideoFromIndex(index:Number):BCVideo {
+        
+            for each(var video:BCVideo in _resultVideos) {
+                
+                if(video.videoStillURL == _imageSourceDataProvider.getItemAt(index)) {
+                    return video;
+                }
+                
+            }
+            
+            return null;
+            
+        }
+        
+    ]]>
+    </Script>
+
+    <!--
+        ********************************************************************************************
+        STYLES
+        ********************************************************************************************
+    -->
+    <Style>
+        
+        .nameTextStyle {
+            
+           font-family: Tahoma, Sans-serif;
+           font-size: 18px;
+           color: #FFFFFF;
+            
+        }
+        
+    </Style>
+
+    <!--
+        ********************************************************************************************
+        VIEW
+        ********************************************************************************************
+    -->
+    <local:DisplayShelf id="shelf"
+            horizontalCenter="0"
+            verticalCenter="0"
+            borderThickness="10"
+            borderColor="#FFFFFF"
+            enableHistory="false"
+            width="100%"
+            popout=".3"
+            selectedIndex="{selectionSlider.value}"
+            dataProvider="{_imageSourceDataProvider}"/>
+
+    <HSlider id="selectionSlider"
+            liveDragging="true"
+            minimum="0"
+            value="0"
+            maximum="{shelf.dataProvider.length - 1}"
+            snapInterval="1"
+            showDataTip="false"
+            width="400"/>
+
+</Application>

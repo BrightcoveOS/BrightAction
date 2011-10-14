@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="false" useMultiPlatformConfig="false" version="1">
+  <includeClasses>
+    <classEntry path="com.brightcove.brightaction.api.FieldsEnum"/>
+    <classEntry path="com.brightcove.brightaction.api.FilterTypeEnum"/>
+    <classEntry path="com.brightcove.brightaction.api.MediaDeliveryTypeEnum"/>
+    <classEntry path="com.brightcove.brightaction.api.MediaRequest"/>
+    <classEntry path="com.brightcove.brightaction.api.MediaRequestError"/>
+    <classEntry path="com.brightcove.brightaction.api.MediaRequestErrorType"/>
+    <classEntry path="com.brightcove.brightaction.api.MediaRequestType"/>
+    <classEntry path="com.brightcove.brightaction.api.OutputTypeEnum"/>
+    <classEntry path="com.brightcove.brightaction.api.SortByTypeEnum"/>
+    <classEntry path="com.brightcove.brightaction.api.SortOrderTypeEnum"/>
+    <classEntry path="com.brightcove.brightaction.error.Assert"/>
+    <classEntry path="com.brightcove.brightaction.error.AssertionError"/>
+    <classEntry path="com.brightcove.brightaction.model.AbstractEnum"/>
+    <classEntry path="com.brightcove.brightaction.model.BCVideo"/>
+    <classEntry path="com.brightcove.brightaction.model.CDNControllerTypeEnum"/>
+    <classEntry path="com.brightcove.brightaction.model.CuePoint"/>
+    <classEntry path="com.brightcove.brightaction.model.CuePointTypeEnum"/>
+    <classEntry path="com.brightcove.brightaction.model.EconomicsEnum"/>
+    <classEntry path="com.brightcove.brightaction.model.GeoFilteredCountriesEnum"/>
+    <classEntry path="com.brightcove.brightaction.model.ItemCollection"/>
+    <classEntry path="com.brightcove.brightaction.model.ItemStateEnum"/>
+    <classEntry path="com.brightcove.brightaction.model.MediaResponse"/>
+    <classEntry path="com.brightcove.brightaction.model.Rendition"/>
+    <classEntry path="com.brightcove.brightaction.model.SearchField"/>
+    <classEntry path="com.brightcove.brightaction.model.SearchFieldsEnum"/>
+    <classEntry path="com.brightcove.brightaction.model.VideoCodecTypeEnum"/>
+    <classEntry path="com.brightcove.brightaction.model.VideoContainerTypeEnum"/>
+    <classEntry path="com.brightcove.brightaction.serialization.Deserializer"/>
+    <classEntry path="com.brightcove.brightaction.serialization.IBrightcoveDeserializer"/>
+    <classEntry path="com.brightcove.brightaction.utils.LogTypeEnum"/>
+    <classEntry path="com.brightcove.brightaction.utils.Logger"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

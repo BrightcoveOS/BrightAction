@@ -1,0 +1,1945 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
+<meta content="MediaRequest,com.brightcove.brightaction.api.MediaRequest,API_URL,FAULT_NAME,RESULT_NAME,error,readToken,resultData,executeRequest,findAllVideos,findModifiedVideos,findRelatedVideos,findVideoById,findVideoByReferenceId,findVideosByCampaignId,findVideosByIds,findVideosByReferenceIds,findVideosByTags,findVideosByText,findVideosByUserId,getLoader,ioErrorHandler,loaderCompleteHandler,searchVideos" name="keywords">
+<title>com.brightcove.brightaction.api.MediaRequest</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'MediaRequest - API Documentation';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?com/brightcove/brightaction/api/MediaRequest.html&amp;com/brightcove/brightaction/api/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;MediaRequest</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class MediaRequest"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.brightcove.brightaction.api</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class MediaRequest</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">MediaRequest <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../images/inherit-arrow.gif"> flash.events.EventDispatcher</td>
+</tr>
+</table>
+<p></p>
+     A request to the Brightcove Media API
+          <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#error">error</a> : <a href="../api/MediaRequestError.html">MediaRequestError</a>
+<div class="summaryTableDescription">[read-only]</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#readToken">readToken</a> : String<div class="summaryTableDescription">[read-only]</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#resultData">resultData</a> : Object<div class="summaryTableDescription">[read-only]</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#MediaRequest()">MediaRequest</a>(readToken:String, serialize:Boolean = true, apiPath:String = "http://api.brightcove.com/services/library")</div>
+<div class="summaryTableDescription">
+         Class constructor
+                  </div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#executeRequest()">executeRequest</a>(extendedParameters:String, requestType:<a href="MediaRequestType.html">MediaRequestType</a>, requestShouldBeExecuted:Boolean = true):String</div>
+<div class="summaryTableDescription">
+         Execute the Brightcove Media API asynchronous request for the token based upon the given
+         Media Request type.</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findAllVideos()">findAllVideos</a>(pageSize:Number = 100, pageNumber:Number = 0, sortBy:<a href="SortByTypeEnum.html">SortByTypeEnum</a> = null, sortOrder:<a href="SortOrderTypeEnum.html">SortOrderTypeEnum</a> = null, getItemCount:Boolean = false, fieldList:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</div>
+<div class="summaryTableDescription">
+         Find all videos in the Brightcove media library for this account.</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findModifiedVideos()">findModifiedVideos</a>(fromDate:Date, filter:Array = null, pageSize:Number = 100, pageNumber:Number = 0, sortBy:<a href="SortByTypeEnum.html">SortByTypeEnum</a> = null, sortOrder:<a href="SortOrderTypeEnum.html">SortOrderTypeEnum</a> = null, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</div>
+<div class="summaryTableDescription">
+         Gets all the videos that have been modified since the given time.</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findRelatedVideos()">findRelatedVideos</a>(videoId:Number = -1, referenceId:String = "", pageSize:Number = 100, pageNumber:Number = 0, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</div>
+<div class="summaryTableDescription">
+         Finds videos related to the given video.</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findVideoById()">findVideoById</a>(videoId:Number, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, isFiltered:Boolean = true, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</div>
+<div class="summaryTableDescription">
+         Finds a single video with the specified ID.</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findVideoByReferenceId()">findVideoByReferenceId</a>(referenceId:String, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, isFiltered:Boolean = true, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</div>
+<div class="summaryTableDescription">
+         Find a video based on its publisher-assigned reference ID.</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findVideosByCampaignId()">findVideosByCampaignId</a>(campaignId:Number, pageSize:Number = 100, pageNumber:Number = 0, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</div>
+<div class="summaryTableDescription">
+         Gets all the videos associated with the given campaign ID.</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findVideosByIds()">findVideosByIds</a>(videoIds:Array, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, isFiltered:Boolean = false, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</div>
+<div class="summaryTableDescription">
+         Find multiple videos, given their IDs.</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findVideosByReferenceIds()">findVideosByReferenceIds</a>(referenceIds:Array, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, isFiltered:Boolean = true, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</div>
+<div class="summaryTableDescription">
+         Find multiple videos based on their publisher-assigned reference IDs.</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findVideosByTags()">findVideosByTags</a>(andTags:Array = null, orTags:Array = null, pageSize:Number = 100, pageNumber:Number = 0, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</div>
+<div class="summaryTableDescription">
+         Performs a search on all the tags of the videos in this account, and returns a
+         collection of videos that contain the specified tags.</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findVideosByText()">findVideosByText</a>(text:String, pageSize:Number = 100, pageNumber:Number = 0, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</div>
+<div class="summaryTableDescription">
+         Searches through all the videos in this account, and returns a collection of videos
+         whose name, short description, or long description contain a match for the specified
+         text.</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findVideosByUserId()">findVideosByUserId</a>(userId:Number, pageSize:Number = 100, pageNumber:Number = 0, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</div>
+<div class="summaryTableDescription">
+         Retrieves the videos uploaded by the specified user id.</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#searchVideos()">searchVideos</a>(all:Array = null, any:Array = null, none:Array = null, sortBy:<a href="SortByTypeEnum.html">SortByTypeEnum</a> = null, exact:Boolean = false, pageSize:Number = 100, pageNumber:Number = 0, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</div>
+<div class="summaryTableDescription">
+         Searches videos according to the criteria provided by the user.</div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+</table>
+</div>
+<a name="protectedMethodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Methods</div>
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getLoader()">getLoader</a>():URLLoader</div>
+<div class="summaryTableDescription"> Factory for the loader, used to inject mocks for testing </div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#ioErrorHandler()">ioErrorHandler</a>(event:Event):void</div>
+<div class="summaryTableDescription"> "fault" event listener to the remote call to the Brightcove media APIs </div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#loaderCompleteHandler()">loaderCompleteHandler</a>(event:Event):void</div>
+<div class="summaryTableDescription"> "result" event listener to the remote call to the Brightcove media APIs </div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#API_URL">API_URL</a> : String = "http://api.brightcove.com/services/library"<div class="summaryTableDescription">[static] The URL for the media API </div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#FAULT_NAME">FAULT_NAME</a> : String = "MEDIA_REQUEST_FAULT"<div class="summaryTableDescription">[static]
+         The name of the event dispatch when the media request has been executed and a fault
+         has been processed
+         </div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#RESULT_NAME">RESULT_NAME</a> : String = "MEDIA_REQUEST_RESULT"<div class="summaryTableDescription">[static]
+         The name of the event dispatch when the media request has been executed and a result
+         has been populated
+         </div>
+</td><td class="summaryTableOwnerCol">MediaRequest</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="error"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">error</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>error:<a href="../api/MediaRequestError.html">MediaRequestError</a></code>&nbsp;&nbsp;[read-only]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get error():<a href="../api/MediaRequestError.html">MediaRequestError</a></code>
+<br>
+</div>
+<a name="readToken"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">readToken</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>readToken:String</code>&nbsp;&nbsp;[read-only]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get readToken():String</code>
+<br>
+</div>
+<a name="resultData"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">resultData</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>resultData:Object</code>&nbsp;&nbsp;[read-only]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get resultData():Object</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="MediaRequest()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">MediaRequest</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function MediaRequest(readToken:String, serialize:Boolean = true, apiPath:String = "http://api.brightcove.com/services/library")</code><p>
+         Class constructor
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">readToken</span>:String</code> &mdash;     the Brightcove Media API read token
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">serialize</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;       an optional URL for invoking the media requests, the default is the
+                              published media API path:
+                              'http://api.brightcove.com/services/library'
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">apiPath</span>:String</code> (default = "<code>http://api.brightcove.com/services/library</code>")<code></code> &mdash;     If set to true, then the result data should be serialized from
+                              generic JSON into strongly typed ActionScript objects
+         </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="executeRequest()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">executeRequest</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function executeRequest(extendedParameters:String, requestType:<a href="MediaRequestType.html">MediaRequestType</a>, requestShouldBeExecuted:Boolean = true):String</code><p>
+         Execute the Brightcove Media API asynchronous request for the token based upon the given
+         Media Request type.
+                  If a result has been returned, populate this object with the result converted into native
+         AS3 objects, not JSON, and dispatch an event notifing listeners of this object that the
+         request has been completed.
+                  If a fault has been returned, store the fault in this object and dispatch a Fault event
+         notifying listeners that a fault has occured.
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">extendedParameters</span>:String</code> &mdash; extendedParameters      Query arguments to be added to the path of the Media API
+                                         request
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestType</span>:<a href="MediaRequestType.html">MediaRequestType</a></code> &mdash; requestType             The type of request being executed, for example
+                                         "Load All Videos"
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestShouldBeExecuted</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; requestShouldBeExecuted If set to true, then contstruct and execute the request
+                                         otherwise just construct and return the request URL
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash;                         the request URL
+         </td>
+</tr>
+</table>
+</div>
+<a name="findAllVideos()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findAllVideos</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function findAllVideos(pageSize:Number = 100, pageNumber:Number = 0, sortBy:<a href="SortByTypeEnum.html">SortByTypeEnum</a> = null, sortOrder:<a href="SortOrderTypeEnum.html">SortOrderTypeEnum</a> = null, getItemCount:Boolean = false, fieldList:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</code><p>
+         Find all videos in the Brightcove media library for this account. This method has the
+         limitation of returning only videos available for play, and does not include videos
+         marked as inactive, currently in the upload process, or outside the scheduled play time.
+         See Searching for Unavailable Videos with the Media API for information about solutions
+         to these limitations.
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">pageSize</span>:Number</code> (default = <code>100</code>)<code></code> &mdash;         Number of items returned per page.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageNumber</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;       The zero-indexed number of the page to return.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sortBy</span>:<a href="SortByTypeEnum.html">SortByTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The field by which to sort the results. A SortByType: One of
+                                 PUBLISH_DATE, CREATION_DATE, MODIFIED_DATE, PLAYS_TOTAL,
+                                 PLAYS_TRAILING_WEEK.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sortOrder</span>:<a href="SortOrderTypeEnum.html">SortOrderTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;        How to order the results: ascending (ASC) or descending (DESC).
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">getItemCount</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;     If true, also return how many total results there are.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">fieldList</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;        A list of the fields you wish to have populated
+                                 in the Videos contained in the returned object. If you omit this
+                                 parameter, the method returns the following fields of the video:
+                                 <code>id, name, shortDescription, longDescription, creationDate,
+                                 publishedDate , lastModifiedDate, linkURL, linkText, tags,
+                                 videoStillURL, thumbnailURL, referenceId, length, economics,
+                                 playsTotal, playsTrailingWeek.</code> If you use a token with URL
+                                 access, this method also returns <code>FLVURL, renditions,
+                                 FLVFullLength, videoFullLength</code>.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;     A comma-separated list of the custom fields you wish to have
+                                 populated in the videos contained in the returned object. If you
+                                 omit this parameter, no custom fields are returned, unless you
+                                 include the value customFields in the video_fields parameter.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mediaDelivery</span>:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;    This is a MediaDeliveryTypeEnum with a value of http, http_ios or
+                                 default. It is meaningful only if used together with the
+                                 video_fields=FLVURL, videoFullLength, or renditions parameters.
+                                 If universal delivery service is enabled for your account, set
+                                 this optional parameter to http to return video by HTTP, rather
+                                 than streaming. For Apple HTTP Live Streaming videos, set this
+                                 optional parameter to http_ios to return the HTTP URL of the
+                                 master index file as the videoFullLength parameter. For more
+                                 information, see Delivering Videos with Apple HTTP Live Streaming.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">output</span>:<a href="OutputTypeEnum.html">OutputTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The default output is JSON, but you can get the output in XML,
+                                 using RSS or MRSS. Use the output argument with the read methods
+                                 to specify the format of the output. Valid values of the output
+                                 argument are: json (the default), mrss (RSS with Media RSS and
+                                 Brightcove extensions), and tm (for distribution through
+                                 TubeMogul OneLoad). See RSS Output from the Media API and
+                                 Creating Feeds for TubeMogul OneLoad with the Media API for code
+                                 examples.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">allVideoFields</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;   If set to true, all available Video Fields will be included false
+                                 otherwise
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestShouldBeExecuted</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   If true (default), then execute this request, otherwise just
+                                 return the request URL.
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash;             The request URL to the Brightcove Media APIs
+         </td>
+</tr>
+</table>
+</div>
+<a name="findModifiedVideos()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findModifiedVideos</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function findModifiedVideos(fromDate:Date, filter:Array = null, pageSize:Number = 100, pageNumber:Number = 0, sortBy:<a href="SortByTypeEnum.html">SortByTypeEnum</a> = null, sortOrder:<a href="SortOrderTypeEnum.html">SortOrderTypeEnum</a> = null, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</code><p>
+         Gets all the videos that have been modified since the given time.
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fromDate</span>:Date</code> &mdash;         The date of the oldest Video which you would like returned.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">filter</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;           A list of FilterTypeEnums, specifying which categories of videos
+                                 you would like returned. Valid filter values are PLAYABLE,
+                                 UNSCHEDULED, INACTIVE, and DELETED.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageSize</span>:Number</code> (default = <code>100</code>)<code></code> &mdash;         Number of items returned per page.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageNumber</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;       The zero-indexed number of the page to return.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sortBy</span>:<a href="SortByTypeEnum.html">SortByTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The field by which to sort the results. A SortByType: One of
+                                 PUBLISH_DATE, CREATION_DATE, MODIFIED_DATE, PLAYS_TOTAL,
+                                 PLAYS_TRAILING_WEEK.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sortOrder</span>:<a href="SortOrderTypeEnum.html">SortOrderTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;        How to order the results: ascending (ASC) or descending (DESC).
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">getItemCount</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;     If true, also return how many total results there are.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">videoFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;      A list of the fields you wish to have populated
+                                 in the Videos contained in the returned object. If you omit this
+                                 parameter, the method returns the following fields of the video:
+                                 <code>id, name, shortDescription, longDescription, creationDate,
+                                 publishedDate , lastModifiedDate, linkURL, linkText, tags,
+                                 videoStillURL, thumbnailURL, referenceId, length, economics,
+                                 playsTotal, playsTrailingWeek.</code> If you use a token with URL
+                                 access, this method also returns <code>FLVURL, renditions,
+                                 FLVFullLength, videoFullLength</code>.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;     A comma-separated list of the custom fields you wish to have
+                                 populated in the videos contained in the returned object. If you
+                                 omit this parameter, no custom fields are returned, unless you
+                                 include the value customFields in the video_fields parameter.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mediaDelivery</span>:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;    This is a MediaDeliveryTypeEnum with a value of http, http_ios or
+                                 default. It is meaningful only if used together with the
+                                 video_fields=FLVURL, videoFullLength, or renditions parameters.
+                                 If universal delivery service is enabled for your account, set
+                                 this optional parameter to http to return video by HTTP, rather
+                                 than streaming. For Apple HTTP Live Streaming videos, set this
+                                 optional parameter to http_ios to return the HTTP URL of the
+                                 master index file as the videoFullLength parameter. For more
+                                 information, see Delivering Videos with Apple HTTP Live Streaming.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">output</span>:<a href="OutputTypeEnum.html">OutputTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The default output is JSON, but you can get the output in XML,
+                                 using RSS or MRSS. Use the output argument with the read methods
+                                 to specify the format of the output. Valid values of the output
+                                 argument are: json (the default), mrss (RSS with Media RSS and
+                                 Brightcove extensions), and tm (for distribution through
+                                 TubeMogul OneLoad). See RSS Output from the Media API and
+                                 Creating Feeds for TubeMogul OneLoad with the Media API for code
+                                 examples.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">allVideoFields</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;   If set to true, all available Video Fields will be included false
+                                 otherwise
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestShouldBeExecuted</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   If true (default), then execute this request, otherwise just
+                                 return the request URL.
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash;                 The request URL to the Brightcove Media APIs
+         </td>
+</tr>
+</table>
+</div>
+<a name="findRelatedVideos()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findRelatedVideos</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function findRelatedVideos(videoId:Number = -1, referenceId:String = "", pageSize:Number = 100, pageNumber:Number = 0, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</code><p>
+         Finds videos related to the given video. Combines the name and short description of the
+         given video and searches for any partial matches in the name, short description, long
+         description, tags, and custom fields of all videos in the Brightcove media library for
+         this account. More precise ways of finding related videos include tagging your videos
+         by subject and using the find_videos_by_tags method to find videos that share the same
+         tags: or creating a playlist that includes videos that you know are related. Consider
+         using the search_videos method, which offers more flexible search and sorting options.
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">videoId</span>:Number</code> (default = <code>-1</code>)<code></code> &mdash;          The ID of the video you would like to retrieve.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">referenceId</span>:String</code> (default = "<code></code>")<code></code> &mdash;      The publisher-assigned reference ID of the video we'd like
+                                 related videos for.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageSize</span>:Number</code> (default = <code>100</code>)<code></code> &mdash;         Number of items returned per page.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageNumber</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;       The zero-indexed number of the page to return.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">getItemCount</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;     If true, also return how many total results there are.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">videoFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;      A list of the fields you wish to have populated
+                                 in the Videos contained in the returned object. If you omit this
+                                 parameter, the method returns the following fields of the video:
+                                 <code>id, name, shortDescription, longDescription, creationDate,
+                                 publishedDate , lastModifiedDate, linkURL, linkText, tags,
+                                 videoStillURL, thumbnailURL, referenceId, length, economics,
+                                 playsTotal, playsTrailingWeek.</code> If you use a token with URL
+                                 access, this method also returns <code>FLVURL, renditions,
+                                 FLVFullLength, videoFullLength</code>.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;     A comma-separated list of the custom fields you wish to have
+                                 populated in the videos contained in the returned object. If you
+                                 omit this parameter, no custom fields are returned, unless you
+                                 include the value customFields in the video_fields parameter.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mediaDelivery</span>:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;    This is a MediaDeliveryTypeEnum with a value of http, http_ios or
+                                 default. It is meaningful only if used together with the
+                                 video_fields=FLVURL, videoFullLength, or renditions parameters.
+                                 If universal delivery service is enabled for your account, set
+                                 this optional parameter to http to return video by HTTP, rather
+                                 than streaming. For Apple HTTP Live Streaming videos, set this
+                                 optional parameter to http_ios to return the HTTP URL of the
+                                 master index file as the videoFullLength parameter. For more
+                                 information, see Delivering Videos with Apple HTTP Live Streaming.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">output</span>:<a href="OutputTypeEnum.html">OutputTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The default output is JSON, but you can get the output in XML,
+                                 using RSS or MRSS. Use the output argument with the read methods
+                                 to specify the format of the output. Valid values of the output
+                                 argument are: json (the default), mrss (RSS with Media RSS and
+                                 Brightcove extensions), and tm (for distribution through
+                                 TubeMogul OneLoad). See RSS Output from the Media API and
+                                 Creating Feeds for TubeMogul OneLoad with the Media API for code
+                                 examples.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">allVideoFields</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;   If set to true, all available Video Fields will be included false
+                                 otherwise
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestShouldBeExecuted</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   If true (default), then execute this request, otherwise just
+                                 return the request URL.
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash;                 The request URL to the Brightcove Media APIs
+         </td>
+</tr>
+</table>
+</div>
+<a name="findVideoById()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findVideoById</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function findVideoById(videoId:Number, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, isFiltered:Boolean = true, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</code><p>
+         Finds a single video with the specified ID. See Accessing Video Content with the Media
+         API for various examples of the find_video_by_id method.
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">videoId</span>:Number</code> &mdash;          The ID of the video you would like to retrieve.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">videoFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;      A list of the fields you wish to have populated
+                                 in the Videos contained in the returned object. If you omit this
+                                 parameter, the method returns the following fields of the video:
+                                 <code>id, name, shortDescription, longDescription, creationDate,
+                                 publishedDate , lastModifiedDate, linkURL, linkText, tags,
+                                 videoStillURL, thumbnailURL, referenceId, length, economics,
+                                 playsTotal, playsTrailingWeek.</code> If you use a token with URL
+                                 access, this method also returns <code>FLVURL, renditions,
+                                 FLVFullLength, videoFullLength</code>.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;     A comma-separated list of the custom fields you wish to have
+                                 populated in the videos contained in the returned object. If you
+                                 omit this parameter, no custom fields are returned, unless you
+                                 include the value customFields in the video_fields parameter.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mediaDelivery</span>:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;    This is a MediaDeliveryTypeEnum with a value of http, http_ios or
+                                 default. It is meaningful only if used together with the
+                                 video_fields=FLVURL, videoFullLength, or renditions parameters.
+                                 If universal delivery service is enabled for your account, set
+                                 this optional parameter to http to return video by HTTP, rather
+                                 than streaming. For Apple HTTP Live Streaming videos, set this
+                                 optional parameter to http_ios to return the HTTP URL of the
+                                 master index file as the videoFullLength parameter. For more
+                                 information, see Delivering Videos with Apple HTTP Live Streaming.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">output</span>:<a href="OutputTypeEnum.html">OutputTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The default output is JSON, but you can get the output in XML,
+                                 using RSS or MRSS. Use the output argument with the read methods
+                                 to specify the format of the output. Valid values of the output
+                                 argument are: json (the default), mrss (RSS with Media RSS and
+                                 Brightcove extensions), and tm (for distribution through
+                                 TubeMogul OneLoad). See RSS Output from the Media API and
+                                 Creating Feeds for TubeMogul OneLoad with the Media API for code
+                                 examples.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">isFiltered</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;       If set to false, the 'unfiltered' version of this method will be
+                                 called, it also returns videos that are unscheduled, inactive, or
+                                 deleted
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">allVideoFields</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;   If set to true, all available Video Fields will be included false
+                                 otherwise
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestShouldBeExecuted</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   If true (default), then execute this request, otherwise just
+                                 return the request URL.
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash;                 The request URL to the Brightcove Media APIs
+         </td>
+</tr>
+</table>
+</div>
+<a name="findVideoByReferenceId()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findVideoByReferenceId</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function findVideoByReferenceId(referenceId:String, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, isFiltered:Boolean = true, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</code><p>
+         Find a video based on its publisher-assigned reference ID.
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">referenceId</span>:String</code> &mdash;      The publisher-assigned reference ID for the video we're
+                                 searching for.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">videoFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;      A list of the fields you wish to have populated
+                                 in the Videos contained in the returned object. If you omit this
+                                 parameter, the method returns the following fields of the video:
+                                 <code>id, name, shortDescription, longDescription, creationDate,
+                                 publishedDate , lastModifiedDate, linkURL, linkText, tags,
+                                 videoStillURL, thumbnailURL, referenceId, length, economics,
+                                 playsTotal, playsTrailingWeek.</code> If you use a token with URL
+                                 access, this method also returns <code>FLVURL, renditions,
+                                 FLVFullLength, videoFullLength</code>.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;     A comma-separated list of the custom fields you wish to have
+                                 populated in the videos contained in the returned object. If you
+                                 omit this parameter, no custom fields are returned, unless you
+                                 include the value customFields in the video_fields parameter.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mediaDelivery</span>:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;    This is a MediaDeliveryTypeEnum with a value of http, http_ios or
+                                 default. It is meaningful only if used together with the
+                                 video_fields=FLVURL, videoFullLength, or renditions parameters.
+                                 If universal delivery service is enabled for your account, set
+                                 this optional parameter to http to return video by HTTP, rather
+                                 than streaming. For Apple HTTP Live Streaming videos, set this
+                                 optional parameter to http_ios to return the HTTP URL of the
+                                 master index file as the videoFullLength parameter. For more
+                                 information, see Delivering Videos with Apple HTTP Live Streaming.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">output</span>:<a href="OutputTypeEnum.html">OutputTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The default output is JSON, but you can get the output in XML,
+                                 using RSS or MRSS. Use the output argument with the read methods
+                                 to specify the format of the output. Valid values of the output
+                                 argument are: json (the default), mrss (RSS with Media RSS and
+                                 Brightcove extensions), and tm (for distribution through
+                                 TubeMogul OneLoad). See RSS Output from the Media API and
+                                 Creating Feeds for TubeMogul OneLoad with the Media API for code
+                                 examples.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">isFiltered</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;       If set to false, the 'unfiltered' version of this method will be
+                                 called, it also returns videos that are unscheduled, inactive, or
+                                 deleted
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">allVideoFields</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;   If set to true, all available Video Fields will be included false
+                                 otherwise
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestShouldBeExecuted</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   If true (default), then execute this request, otherwise just
+                                 return the request URL.
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash;                 The request URL to the Brightcove Media APIs
+         </td>
+</tr>
+</table>
+</div>
+<a name="findVideosByCampaignId()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findVideosByCampaignId</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function findVideosByCampaignId(campaignId:Number, pageSize:Number = 100, pageNumber:Number = 0, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</code><p>
+         Gets all the videos associated with the given campaign ID. Campaigns are a feature of
+         the consumer-generated media (CGM) module.
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">campaignId</span>:Number</code> &mdash;       The ID of the campaign you'd like to fetch videos for.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageSize</span>:Number</code> (default = <code>100</code>)<code></code> &mdash;         Number of items returned per page.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageNumber</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;       The zero-indexed number of the page to return.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">getItemCount</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;     If true, also return how many total results there are.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">videoFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;      A list of the fields you wish to have populated
+                                 in the Videos contained in the returned object. If you omit this
+                                 parameter, the method returns the following fields of the video:
+                                 <code>id, name, shortDescription, longDescription, creationDate,
+                                 publishedDate , lastModifiedDate, linkURL, linkText, tags,
+                                 videoStillURL, thumbnailURL, referenceId, length, economics,
+                                 playsTotal, playsTrailingWeek.</code> If you use a token with URL
+                                 access, this method also returns <code>FLVURL, renditions,
+                                 FLVFullLength, videoFullLength</code>.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;     A comma-separated list of the custom fields you wish to have
+                                 populated in the videos contained in the returned object. If you
+                                 omit this parameter, no custom fields are returned, unless you
+                                 include the value customFields in the video_fields parameter.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mediaDelivery</span>:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;    This is a MediaDeliveryTypeEnum with a value of http, http_ios or
+                                 default. It is meaningful only if used together with the
+                                 video_fields=FLVURL, videoFullLength, or renditions parameters.
+                                 If universal delivery service is enabled for your account, set
+                                 this optional parameter to http to return video by HTTP, rather
+                                 than streaming. For Apple HTTP Live Streaming videos, set this
+                                 optional parameter to http_ios to return the HTTP URL of the
+                                 master index file as the videoFullLength parameter. For more
+                                 information, see Delivering Videos with Apple HTTP Live Streaming.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">output</span>:<a href="OutputTypeEnum.html">OutputTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The default output is JSON, but you can get the output in XML,
+                                 using RSS or MRSS. Use the output argument with the read methods
+                                 to specify the format of the output. Valid values of the output
+                                 argument are: json (the default), mrss (RSS with Media RSS and
+                                 Brightcove extensions), and tm (for distribution through
+                                 TubeMogul OneLoad). See RSS Output from the Media API and
+                                 Creating Feeds for TubeMogul OneLoad with the Media API for code
+                                 examples.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">allVideoFields</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;   If set to true, all available Video Fields will be included false
+                                 otherwise
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestShouldBeExecuted</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   If true (default), then execute this request, otherwise just
+                                 return the request URL.
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash;                 The request URL to the Brightcove Media APIs
+         </td>
+</tr>
+</table>
+</div>
+<a name="findVideosByIds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findVideosByIds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function findVideosByIds(videoIds:Array, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, isFiltered:Boolean = false, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</code><p>
+         Find multiple videos, given their IDs.
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">videoIds</span>:Array</code> &mdash;         A comma-separated list of video IDs for the videos we want to retrieve in
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">videoFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;      A list of the fields you wish to have populated
+                                 in the Videos contained in the returned object. If you omit this
+                                 parameter, the method returns the following fields of the video:
+                                 <code>id, name, shortDescription, longDescription, creationDate,
+                                 publishedDate , lastModifiedDate, linkURL, linkText, tags,
+                                 videoStillURL, thumbnailURL, referenceId, length, economics,
+                                 playsTotal, playsTrailingWeek.</code> If you use a token with URL
+                                 access, this method also returns <code>FLVURL, renditions,
+                                 FLVFullLength, videoFullLength</code>.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;     A comma-separated list of the custom fields you wish to have
+                                 populated in the videos contained in the returned object. If you
+                                 omit this parameter, no custom fields are returned, unless you
+                                 include the value customFields in the video_fields parameter.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mediaDelivery</span>:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;    This is a MediaDeliveryTypeEnum with a value of http, http_ios or
+                                 default. It is meaningful only if used together with the
+                                 video_fields=FLVURL, videoFullLength, or renditions parameters.
+                                 If universal delivery service is enabled for your account, set
+                                 this optional parameter to http to return video by HTTP, rather
+                                 than streaming. For Apple HTTP Live Streaming videos, set this
+                                 optional parameter to http_ios to return the HTTP URL of the
+                                 master index file as the videoFullLength parameter. For more
+                                 information, see Delivering Videos with Apple HTTP Live Streaming.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">output</span>:<a href="OutputTypeEnum.html">OutputTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The default output is JSON, but you can get the output in XML,
+                                 using RSS or MRSS. Use the output argument with the read methods
+                                 to specify the format of the output. Valid values of the output
+                                 argument are: json (the default), mrss (RSS with Media RSS and
+                                 Brightcove extensions), and tm (for distribution through
+                                 TubeMogul OneLoad). See RSS Output from the Media API and
+                                 Creating Feeds for TubeMogul OneLoad with the Media API for code
+                                 examples.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">isFiltered</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;       If set to false, the 'unfiltered' version of this method will be
+                                 called, it also returns videos that are unscheduled, inactive, or
+                                 deleted
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">allVideoFields</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;   If set to true, all available Video Fields will be included false
+                                 otherwise
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestShouldBeExecuted</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   If true (default), then execute this request, otherwise just
+                                 return the request URL.
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash;                 The request URL to the Brightcove Media APIs
+         </td>
+</tr>
+</table>
+</div>
+<a name="findVideosByReferenceIds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findVideosByReferenceIds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function findVideosByReferenceIds(referenceIds:Array, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, isFiltered:Boolean = true, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</code><p>
+         Find multiple videos based on their publisher-assigned reference IDs.
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">referenceIds</span>:Array</code> &mdash;     The list of reference IDs for the videos we'd like to retrieve.
+                                 This value is limited to 150 characters. The value cannot
+                                 contain commas to work around this issue, avoid using commas
+                                 in reference_id values.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">videoFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;      A list of the fields you wish to have populated
+                                 in the Videos contained in the returned object. If you omit this
+                                 parameter, the method returns the following fields of the video:
+                                 <code>id, name, shortDescription, longDescription, creationDate,
+                                 publishedDate , lastModifiedDate, linkURL, linkText, tags,
+                                 videoStillURL, thumbnailURL, referenceId, length, economics,
+                                 playsTotal, playsTrailingWeek.</code> If you use a token with URL
+                                 access, this method also returns <code>FLVURL, renditions,
+                                 FLVFullLength, videoFullLength</code>.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;     A comma-separated list of the custom fields you wish to have
+                                 populated in the videos contained in the returned object. If you
+                                 omit this parameter, no custom fields are returned, unless you
+                                 include the value customFields in the video_fields parameter.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mediaDelivery</span>:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;    This is a MediaDeliveryTypeEnum with a value of http, http_ios or
+                                 default. It is meaningful only if used together with the
+                                 video_fields=FLVURL, videoFullLength, or renditions parameters.
+                                 If universal delivery service is enabled for your account, set
+                                 this optional parameter to http to return video by HTTP, rather
+                                 than streaming. For Apple HTTP Live Streaming videos, set this
+                                 optional parameter to http_ios to return the HTTP URL of the
+                                 master index file as the videoFullLength parameter. For more
+                                 information, see Delivering Videos with Apple HTTP Live Streaming.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">output</span>:<a href="OutputTypeEnum.html">OutputTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The default output is JSON, but you can get the output in XML,
+                                 using RSS or MRSS. Use the output argument with the read methods
+                                 to specify the format of the output. Valid values of the output
+                                 argument are: json (the default), mrss (RSS with Media RSS and
+                                 Brightcove extensions), and tm (for distribution through
+                                 TubeMogul OneLoad). See RSS Output from the Media API and
+                                 Creating Feeds for TubeMogul OneLoad with the Media API for code
+                                 examples.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">isFiltered</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;       If set to false, the 'unfiltered' version of this method will be
+                                 called, it also returns videos that are unscheduled, inactive, or
+                                 deleted
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">allVideoFields</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;   If set to true, all available Video Fields will be included false
+                                 otherwise
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestShouldBeExecuted</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   If true (default), then execute this request, otherwise just
+                                 return the request URL.
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash;                 The request URL to the Brightcove Media APIs
+         </td>
+</tr>
+</table>
+</div>
+<a name="findVideosByTags()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findVideosByTags</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function findVideosByTags(andTags:Array = null, orTags:Array = null, pageSize:Number = 100, pageNumber:Number = 0, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</code><p>
+         Performs a search on all the tags of the videos in this account, and returns a
+         collection of videos that contain the specified tags. Note that tags are not
+         case-sensitive. This method does not provide parameters for sorting the result set.
+         Consider using the search_videos method, which offers more flexible search and sorting
+         options.
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">andTags</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;          Limit the results to those that contain all of these tags.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">orTags</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;           Limit the results to those that contain at least one of these
+                                 tags.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageSize</span>:Number</code> (default = <code>100</code>)<code></code> &mdash;         Number of items returned per page.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageNumber</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;       The zero-indexed number of the page to return.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">getItemCount</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;     If true, also return how many total results there are.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">videoFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;      A list of the fields you wish to have populated
+                                 in the Videos contained in the returned object. If you omit this
+                                 parameter, the method returns the following fields of the video:
+                                 <code>id, name, shortDescription, longDescription, creationDate,
+                                 publishedDate , lastModifiedDate, linkURL, linkText, tags,
+                                 videoStillURL, thumbnailURL, referenceId, length, economics,
+                                 playsTotal, playsTrailingWeek.</code> If you use a token with URL
+                                 access, this method also returns <code>FLVURL, renditions,
+                                 FLVFullLength, videoFullLength</code>.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;     A comma-separated list of the custom fields you wish to have
+                                 populated in the videos contained in the returned object. If you
+                                 omit this parameter, no custom fields are returned, unless you
+                                 include the value customFields in the video_fields parameter.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mediaDelivery</span>:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;    This is a MediaDeliveryTypeEnum with a value of http, http_ios or
+                                 default. It is meaningful only if used together with the
+                                 video_fields=FLVURL, videoFullLength, or renditions parameters.
+                                 If universal delivery service is enabled for your account, set
+                                 this optional parameter to http to return video by HTTP, rather
+                                 than streaming. For Apple HTTP Live Streaming videos, set this
+                                 optional parameter to http_ios to return the HTTP URL of the
+                                 master index file as the videoFullLength parameter. For more
+                                 information, see Delivering Videos with Apple HTTP Live Streaming.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">output</span>:<a href="OutputTypeEnum.html">OutputTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The default output is JSON, but you can get the output in XML,
+                                 using RSS or MRSS. Use the output argument with the read methods
+                                 to specify the format of the output. Valid values of the output
+                                 argument are: json (the default), mrss (RSS with Media RSS and
+                                 Brightcove extensions), and tm (for distribution through
+                                 TubeMogul OneLoad). See RSS Output from the Media API and
+                                 Creating Feeds for TubeMogul OneLoad with the Media API for code
+                                 examples.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">allVideoFields</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;   If set to true, all available Video Fields will be included false
+                                 otherwise
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestShouldBeExecuted</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   If true (default), then execute this request, otherwise just
+                                 return the request URL.
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash;                 The request URL to the Brightcove Media APIs
+         </td>
+</tr>
+</table>
+</div>
+<a name="findVideosByText()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findVideosByText</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function findVideosByText(text:String, pageSize:Number = 100, pageNumber:Number = 0, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</code><p>
+         Searches through all the videos in this account, and returns a collection of videos
+         whose name, short description, or long description contain a match for the specified
+         text. Unlike some other Read methods, this method does not provide parameters for
+         sorting the result set. The result set is sorted by relevance. Consider using the
+         search_videos method, which offers more flexible search and sorting options.  The
+         find_videos_by_text method returns substring matches – words from your search string
+         plus a wildcard ( at the end; thus, if your search string is "war", the result set
+         will include results such as "warrior", "warfare", and "warbler." Substrings that don't
+         match the beginning of a word are not returned; thus, if your search string is "war",
+         the result set would not include results such as "swarthy" or "inward".
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">text</span>:String</code> &mdash;             The text we're searching for.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageSize</span>:Number</code> (default = <code>100</code>)<code></code> &mdash;         Number of items returned per page.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageNumber</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;       The zero-indexed number of the page to return.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">getItemCount</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;     If true, also return how many total results there are.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">videoFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;      A list of the fields you wish to have populated
+                                 in the Videos contained in the returned object. If you omit this
+                                 parameter, the method returns the following fields of the video:
+                                 <code>id, name, shortDescription, longDescription, creationDate,
+                                 publishedDate , lastModifiedDate, linkURL, linkText, tags,
+                                 videoStillURL, thumbnailURL, referenceId, length, economics,
+                                 playsTotal, playsTrailingWeek.</code> If you use a token with URL
+                                 access, this method also returns <code>FLVURL, renditions,
+                                 FLVFullLength, videoFullLength</code>.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;     A comma-separated list of the custom fields you wish to have
+                                 populated in the videos contained in the returned object. If you
+                                 omit this parameter, no custom fields are returned, unless you
+                                 include the value customFields in the video_fields parameter.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mediaDelivery</span>:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;    This is a MediaDeliveryTypeEnum with a value of http, http_ios or
+                                 default. It is meaningful only if used together with the
+                                 video_fields=FLVURL, videoFullLength, or renditions parameters.
+                                 If universal delivery service is enabled for your account, set
+                                 this optional parameter to http to return video by HTTP, rather
+                                 than streaming. For Apple HTTP Live Streaming videos, set this
+                                 optional parameter to http_ios to return the HTTP URL of the
+                                 master index file as the videoFullLength parameter. For more
+                                 information, see Delivering Videos with Apple HTTP Live Streaming.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">output</span>:<a href="OutputTypeEnum.html">OutputTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The default output is JSON, but you can get the output in XML,
+                                 using RSS or MRSS. Use the output argument with the read methods
+                                 to specify the format of the output. Valid values of the output
+                                 argument are: json (the default), mrss (RSS with Media RSS and
+                                 Brightcove extensions), and tm (for distribution through
+                                 TubeMogul OneLoad). See RSS Output from the Media API and
+                                 Creating Feeds for TubeMogul OneLoad with the Media API for code
+                                 examples.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">allVideoFields</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;   If set to true, all available Video Fields will be included false
+                                 otherwise
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestShouldBeExecuted</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   If true (default), then execute this request, otherwise just
+                                 return the request URL.
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash;                 The request URL to the Brightcove Media APIs
+         </td>
+</tr>
+</table>
+</div>
+<a name="findVideosByUserId()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findVideosByUserId</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function findVideosByUserId(userId:Number, pageSize:Number = 100, pageNumber:Number = 0, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</code><p>
+         Retrieves the videos uploaded by the specified user id. This method can be used to find
+         videos submitted using the consumer-generated media (CGM) module.
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">userId</span>:Number</code> &mdash;           The ID of the user whose videos we'd like to retrieve.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageSize</span>:Number</code> (default = <code>100</code>)<code></code> &mdash;         Number of items returned per page.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageNumber</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;       The zero-indexed number of the page to return.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">getItemCount</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;     If true, also return how many total results there are.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">videoFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;      A list of the fields you wish to have populated
+                                 in the Videos contained in the returned object. If you omit this
+                                 parameter, the method returns the following fields of the video:
+                                 <code>id, name, shortDescription, longDescription, creationDate,
+                                 publishedDate , lastModifiedDate, linkURL, linkText, tags,
+                                 videoStillURL, thumbnailURL, referenceId, length, economics,
+                                 playsTotal, playsTrailingWeek.</code> If you use a token with URL
+                                 access, this method also returns <code>FLVURL, renditions,
+                                 FLVFullLength, videoFullLength</code>.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;     A comma-separated list of the custom fields you wish to have
+                                 populated in the videos contained in the returned object. If you
+                                 omit this parameter, no custom fields are returned, unless you
+                                 include the value customFields in the video_fields parameter.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mediaDelivery</span>:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;    This is a MediaDeliveryTypeEnum with a value of http, http_ios or
+                                 default. It is meaningful only if used together with the
+                                 video_fields=FLVURL, videoFullLength, or renditions parameters.
+                                 If universal delivery service is enabled for your account, set
+                                 this optional parameter to http to return video by HTTP, rather
+                                 than streaming. For Apple HTTP Live Streaming videos, set this
+                                 optional parameter to http_ios to return the HTTP URL of the
+                                 master index file as the videoFullLength parameter. For more
+                                 information, see Delivering Videos with Apple HTTP Live Streaming.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">output</span>:<a href="OutputTypeEnum.html">OutputTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The default output is JSON, but you can get the output in XML,
+                                 using RSS or MRSS. Use the output argument with the read methods
+                                 to specify the format of the output. Valid values of the output
+                                 argument are: json (the default), mrss (RSS with Media RSS and
+                                 Brightcove extensions), and tm (for distribution through
+                                 TubeMogul OneLoad). See RSS Output from the Media API and
+                                 Creating Feeds for TubeMogul OneLoad with the Media API for code
+                                 examples.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">allVideoFields</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;   If set to true, all available Video Fields will be included false
+                                 otherwise
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestShouldBeExecuted</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   If true (default), then execute this request, otherwise just
+                                 return the request URL.
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash;                 The request URL to the Brightcove Media APIs
+         </td>
+</tr>
+</table>
+</div>
+<a name="getLoader()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getLoader</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function getLoader():URLLoader</code><p> Factory for the loader, used to inject mocks for testing </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>URLLoader</code></td>
+</tr>
+</table>
+</div>
+<a name="ioErrorHandler()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ioErrorHandler</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function ioErrorHandler(event:Event):void</code><p> "fault" event listener to the remote call to the Brightcove media APIs </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">event</span>:Event</code></td>
+</tr>
+</table>
+</div>
+<a name="loaderCompleteHandler()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">loaderCompleteHandler</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function loaderCompleteHandler(event:Event):void</code><p> "result" event listener to the remote call to the Brightcove media APIs </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">event</span>:Event</code></td>
+</tr>
+</table>
+</div>
+<a name="searchVideos()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">searchVideos</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function searchVideos(all:Array = null, any:Array = null, none:Array = null, sortBy:<a href="SortByTypeEnum.html">SortByTypeEnum</a> = null, exact:Boolean = false, pageSize:Number = 100, pageNumber:Number = 0, getItemCount:Boolean = false, videoFields:Array = null, customFields:Array = null, mediaDelivery:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a> = null, output:<a href="OutputTypeEnum.html">OutputTypeEnum</a> = null, allVideoFields:Boolean = false, requestShouldBeExecuted:Boolean = true):String</code><p>
+         Searches videos according to the criteria provided by the user. The criteria are
+         constructed using field/value pairs specified in the command. Consider using the
+         search_videos method for video searches rather than using the other find_video read
+         methods. The search_videos method offers more flexible search and sorting options than
+         the find_video methods, and is especially more flexible than the find_videos_by_text and
+         find_videos_by_tags methods. For more examples of the search_videos method, see:
+         Searching for Videos with the Media API.
+                  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">all</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;              Specifies the field:value pairs for search criteria that MUST be
+                                 present in the index in order to return a hit in the result set.
+                                 The format is fieldName:value. If the field's name is not
+                                 present, it is assumed to be displayName, shortDescription, and
+                                 longDescription.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">any</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;              Specifies the field:value pairs for search criteria AT LEAST ONE
+                                 of which must be present to return a hit in the result set. The
+                                 format is fieldName:value. If the field's name is not present,
+                                 it is assumed to be displayName, shortDescription, and
+                                 longDescription.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">none</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;             Specifies the field:value pairs for search criteria that MUST NOT
+                                 be present to return a hit in the result set. The format is
+                                 fieldName:value. If the field's name is not present, it is
+                                 assumed to be displayName, shortDescription, and longDescription.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">sortBy</span>:<a href="SortByTypeEnum.html">SortByTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The field by which to sort the results. A SortByType: One of
+                                 PUBLISH_DATE, CREATION_DATE, MODIFIED_DATE, PLAYS_TOTAL,
+                                 PLAYS_TRAILING_WEEK.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">exact</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;            If true, disables fuzzy search and requires an exact match of
+                                 search terms. A fuzzy search does not require an exact match of
+                                 the indexed terms, but will return a hit for terms that are
+                                 closely related based on language-specific criteria. The fuzzy
+                                 search is available only if your account is based in the United
+                                 States.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageSize</span>:Number</code> (default = <code>100</code>)<code></code> &mdash;         Number of items returned per page.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pageNumber</span>:Number</code> (default = <code>0</code>)<code></code> &mdash;       The zero-indexed number of the page to return.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">getItemCount</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;     If true, also return how many total results there are.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">videoFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;      A list of the fields you wish to have populated
+                                 in the Videos contained in the returned object. If you omit this
+                                 parameter, the method returns the following fields of the video:
+                                 <code>id, name, shortDescription, longDescription, creationDate,
+                                 publishedDate , lastModifiedDate, linkURL, linkText, tags,
+                                 videoStillURL, thumbnailURL, referenceId, length, economics,
+                                 playsTotal, playsTrailingWeek.</code> If you use a token with URL
+                                 access, this method also returns <code>FLVURL, renditions,
+                                 FLVFullLength, videoFullLength</code>.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customFields</span>:Array</code> (default = <code>null</code>)<code></code> &mdash;     A comma-separated list of the custom fields you wish to have
+                                 populated in the videos contained in the returned object. If you
+                                 omit this parameter, no custom fields are returned, unless you
+                                 include the value customFields in the video_fields parameter.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">mediaDelivery</span>:<a href="MediaDeliveryTypeEnum.html">MediaDeliveryTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;    This is a MediaDeliveryTypeEnum with a value of http, http_ios or
+                                 default. It is meaningful only if used together with the
+                                 video_fields=FLVURL, videoFullLength, or renditions parameters.
+                                 If universal delivery service is enabled for your account, set
+                                 this optional parameter to http to return video by HTTP, rather
+                                 than streaming. For Apple HTTP Live Streaming videos, set this
+                                 optional parameter to http_ios to return the HTTP URL of the
+                                 master index file as the videoFullLength parameter. For more
+                                 information, see Delivering Videos with Apple HTTP Live Streaming.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">output</span>:<a href="OutputTypeEnum.html">OutputTypeEnum</a></code> (default = <code>null</code>)<code></code> &mdash;           The default output is JSON, but you can get the output in XML,
+                                 using RSS or MRSS. Use the output argument with the read methods
+                                 to specify the format of the output. Valid values of the output
+                                 argument are: json (the default), mrss (RSS with Media RSS and
+                                 Brightcove extensions), and tm (for distribution through
+                                 TubeMogul OneLoad). See RSS Output from the Media API and
+                                 Creating Feeds for TubeMogul OneLoad with the Media API for code
+                                 examples.
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">allVideoFields</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash;   If set to true, all available Video Fields will be included false
+                                 otherwise
+         </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">requestShouldBeExecuted</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash;   If true (default), then execute this request, otherwise just
+                                 return the request URL.
+         </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash;                 The request URL to the Brightcove Media APIs
+         </td>
+</tr>
+</table>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="API_URL"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">API_URL</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const API_URL:String = "http://api.brightcove.com/services/library"</code><p> The URL for the media API </p></div>
+<a name="FAULT_NAME"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">FAULT_NAME</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const FAULT_NAME:String = "MEDIA_REQUEST_FAULT"</code><p>
+         The name of the event dispatch when the media request has been executed and a fault
+         has been processed
+         </p></div>
+<a name="RESULT_NAME"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">RESULT_NAME</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const RESULT_NAME:String = "MEDIA_REQUEST_RESULT"</code><p>
+         The name of the event dispatch when the media request has been executed and a result
+         has been populated
+         </p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

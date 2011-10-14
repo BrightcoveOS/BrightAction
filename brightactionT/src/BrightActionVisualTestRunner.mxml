@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--[CDATA[
+
+    $HEADER
+
+    The Visual Test Runner for the Encapsulating Brightcove Media APIs application- run a suite of
+    tests against the objects the encapsulate communication with the BC Media APIs.
+
+    @author amanning
+
+]]>-->
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+        xmlns:flexUnitUIRunner="http://www.adobe.com/2009/flexUnitUIRunner"
+        creationComplete="onCreationComplete()">
+
+    <mx:Script>
+        <![CDATA[
+            import org.flexunit.listeners.UIListener;
+            import com.brightcove.brightaction.suite.BrightActionSuite;
+            
+            import org.flexunit.runner.FlexUnitCore;
+            
+            /** The core Flexunit module */
+            private var core:FlexUnitCore;
+            
+            /** "creation complete" event listener for the view */
+            public function onCreationComplete():void {
+                
+                core = new FlexUnitCore();
+                
+                //Listener for the UI
+                core.addListener(new UIListener( uiListener ));
+                
+                // Begin running tests
+                core.run(BrightActionSuite);
+            
+            }
+        ]]>
+    </mx:Script>
+
+    <!-- The UI test running application -->
+    <flexUnitUIRunner:TestRunnerBase id="uiListener"
+            width="100%"
+            height="100%"/>
+
+</mx:Application>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml">
+
+    <!--
+    ********************************************************************************************
+    SCRIPT
+    ********************************************************************************************
+    -->
+    <mx:Script>
+        <![CDATA[
+            import com.brightcove.brightaction.api.MediaRequest;
+            import com.brightcove.brightaction.api.SortByTypeEnum;
+            import com.brightcove.brightaction.api.SortOrderTypeEnum;
+            import com.brightcove.brightaction.model.BCVideo;
+            import com.brightcove.brightaction.model.ItemCollection;
+            
+            import mx.collections.ArrayCollection;
+            import mx.controls.Alert;
+            
+            /** The currently selected video */
+            [Bindable]
+            private var _selectedVideo:BCVideo;
+            
+            /** The publisher token to be used to make the requests */
+            private var _token:String = "Q1kGwkwut5YvD4cGLykpwxNQREpbBRYHCEZu2LF8z6U."
+            
+            /**
+             * The "click" event listener for the find_all_videos button - load the videos from
+             * Brightcove convert them for JSON to native AS Objects and populate it in a datagrid
+             */
+            private function onButtonClick():void {
+                
+                // create a request
+                var mediaRequest:MediaRequest = new MediaRequest(_token);
+                
+                // add event listeners
+                mediaRequest.addEventListener(
+                    MediaRequest.RESULT_NAME, 
+                    loaderCompleteHandler);
+                
+                mediaRequest.addEventListener(
+                    MediaRequest.FAULT_NAME, 
+                    errorHandler);
+                
+                // call to the media API with the method that you want
+                mediaRequest.findAllVideos();
+            
+            }
+            
+            /** "result" event listener to the remote call to the Brightcove media APIs */
+            private function loaderCompleteHandler(event:Event):void {
+                
+                videosDataGrid.dataProvider = new ArrayCollection(
+                    (((event.currentTarget as MediaRequest).resultData) as ItemCollection).items);
+            
+            }
+            
+            /** "fault" event listener to the remote call to the Brightcove media APIs */
+            private function errorHandler(event:Event):void {
+                
+                mx.controls.Alert.show(
+                    "An error occurred" + 
+                    event.target.toString(),
+                    "An error occurred");
+            
+            }
+        ]]>
+    </mx:Script>
+
+    <!--
+    ********************************************************************************************
+    VIEW
+    ********************************************************************************************
+    -->
+    <mx:Button id="loadButton"
+            label="Load Vidoes"
+            click="onButtonClick()"/>
+
+    <mx:DataGrid id="videosDataGrid"
+            width="100%"
+            height="100%" 
+            change="_selectedVideo = videosDataGrid.selectedItem as BCVideo;">
+
+        <mx:columns>
+            <mx:DataGridColumn dataField="id"
+                    headerText="ID"/>
+            <mx:DataGridColumn dataField="name"
+                    headerText="Name"/>
+            <mx:DataGridColumn dataField="shortDescription"
+                    headerText="Description"/>
+            <mx:DataGridColumn dataField="publishedDate"
+                    headerText="Published Date"/>
+        </mx:columns>
+    </mx:DataGrid>
+
+    
+    <mx:Form visible="{_selectedVideo != null}">
+        <mx:FormItem label="id">
+            <mx:Label text="{_selectedVideo.id}"/>            
+        </mx:FormItem>
+        <mx:FormItem label="name">
+            <mx:Label text="{_selectedVideo.name}"/>            
+        </mx:FormItem>
+        <mx:FormItem label="Desc">
+            <mx:Label text="{_selectedVideo.shortDescription}"/>            
+        </mx:FormItem>
+    </mx:Form>
+    
+</mx:Application>

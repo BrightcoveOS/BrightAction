@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="" >
+<testsuite  name="Default Test Suite" project="brightactionT">
+<testsuite name="com.brightcove.brightaction.utils:ObjectCheckerTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.api:SearchFieldTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.utils:StringUtilsTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.model:GeoFilteredCountriesEnumTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.model:VideoTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.api:MediaRequestTest_VideoRead" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.serialization:DeserializerTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.model:AbstractEnumTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.utils:ObjectComparerTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.utils:LoggerTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.model:ItemStateEnumTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.api:MediaRequestTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.error:AssertTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.model:CuePointTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.model:RenditionTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.api:FieldsEnumTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.api:MediaRequestErrorTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.api:MediaRequestErrorTypeTest" type="testsuiteclass"/>
+<testsuite name="com.brightcove.brightaction.suite:BrightActionSuite" type="testcaseclass"/>
+</testsuite>
+</testrun>
